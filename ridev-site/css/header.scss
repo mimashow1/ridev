@@ -1,0 +1,156 @@
+$primary-color-opacity: rgba(#000000, 0.5);
+$primary-color: #424242;
+$link-color: #ffffff;
+$link-color-hover: #e4cd00;
+$border-color: rgba(#6f6e6e, 0.5);
+
+
+@media all and (min-width: 720px){
+  #menu{
+    display: table;
+  }
+
+  #mobile-menu{
+    display: none;
+  }
+
+  #mobile-header{
+    display: none;
+  }
+}
+
+@media all and (max-width: 719px){
+  #menu{
+    display: none;
+  }
+
+  #mobile-menu{
+    display: table;
+  }
+}
+
+
+
+
+
+#logo{
+  max-height: 90px;
+  max-width: 90px;
+  margin-left: 50px;
+}
+
+#logo *{
+  max-height: 100%;
+  max-width: 100%;
+  color: $link-color;
+  vertical-align: middle;
+  display: table-cell;
+  height: 90px;
+}
+
+
+
+
+
+
+#menu .menu-links a{
+  padding-right: 50px;
+  height: 90px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#menu .menu-links a:hover{
+  color: $link-color-hover;
+}
+
+#menu .menu-links{
+  float: right;
+}
+
+#menu{
+  background-color: $primary-color-opacity;
+  border-bottom: solid 1px rgba(#6f6e6e, 0.5);
+  overflow: hidden;
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+#mobile-header{
+  background-color: $primary-color-opacity;
+  border-bottom: solid 1px $border-color;
+}
+
+#mobile-logo *{
+  color: $link-color;
+  height: 90px;
+  display: flex;
+  align-items: center; /*Делает текст по середине по вертикали*/
+  justify-content: center; /*Делает текст по середине по горизонтали*/
+}
+
+
+
+
+
+
+
+
+
+
+
+#mobile-menu{
+  background-color: $primary-color-opacity;
+  position: fixed;
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  margin-top: 100px;
+  border-top: solid 1px $border-color;
+}
+
+#mobile-menu .menu-links .foot-link{
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+#mobile-menu .menu-links .foot-link a:hover{
+  color: $link-color-hover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mobile-menu a,
+#menu a{
+  color: $link-color;
+}
+
+
+
+#menu .menu-links,
+#mobile-menu .menu-links{
+  display:table-cell;
+  vertical-align: middle;
+}
