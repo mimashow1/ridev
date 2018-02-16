@@ -9,7 +9,7 @@
     <title>Home</title>
   </head>
   <body>
-    <header id="menu">
+    <header class="menu" >
      <div id="logo" class="left">
        <a href="#"> <h1>RiDev</h1> </a><!--<a href="#"> <img src="img/logo.png" alt="Ridev"> </a>-->
      </div>
@@ -20,6 +20,10 @@
        <a href="#" title="Information"><i class="fa fa-info fa-2x" aria-hidden="true"></i></a>
        <a href="#" title="Languages"><i class="fa fa-language fa-2x" aria-hidden="true"></i></a>
      </div>
+
+     <!--<div id="btn-header">
+       <a href="#" class="btn">Ordering a website</a>
+     </div>-->
    </header>
 
 
@@ -45,15 +49,24 @@
    </header>
 
    <div id="page">
-     <div class="block first" style="background-color:white">
+     <div class="block first img_block">
+       <div class="text">
+         <a href="#" class="btn">Ordering a website</a>
+       </div>
+     </div>
+
+     <div class="block" style="background-color:white">
+       <h1>Services</h1>
        <p>dfsagfsdgsdfgsdgsfdgsdgsdd</p>
      </div>
 
      <div class="block" style="background-color:red">
+       <h1>Website's types</h1>
        <p>dfsagfsdgsdfgsdgsfdgsdgsdd</p>
      </div>
 
      <div class="block last" style="background-color:purple">
+       <h1>About our services</h1>
        <p>dfsagfsdgsdfgsdgsfdgsdgsdd</p>
      </div>
    </div>
@@ -64,5 +77,7 @@
 
 
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/header.js"></script>
   </body>
 </html>
